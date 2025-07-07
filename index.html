@@ -1,19 +1,36 @@
 <html lang="fr">
     <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Page Web</title>
     <meta charset="UTF-8">
 </head>
 <body>
-    <div class = "titre">
-        <h1>Bienvenue</h1>
+    <div class="bannière-latérale">
+        <a href="https://github.com/" target="_blank" class="icon-link"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.deezer.com/" target="_blank" class="icon-link"><i class="fab fa-deezer fa-2x"></i></a>
+        <a href="https://mail.proton.me/u/7/inbox" target="_blank" class="icon-link"><i class="fa-solid fa-inbox fa-2x"></i></a>
+        <a href="https://pass.proton.me/u/7/" target="_blank" class="icon-link"><i class="fa-solid fa-key fa-2x"></i></a>
+        <a href="https://chatgpt.com/" target="_blank" class="icon-link"><i class="fa-solid fa-comments fa-2x"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank" class="icon-link"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
     </div>
-    <div class = "description">
+    <div class="contenu-principal">
+        <div class="titre">
+            <h1>Bienvenue</h1>
+        </div>
+    <div class="description">
         <p>Une page web personnelle réaliser avec html et css</p>
     </div>
-    <div class="bannière-latérale">
-        <button onclick="window.location.href='https://github.com/'">Github</button>
-        <button onclick="window.location.href='https://www.deezer.com/'">Deezer</button>
+        <div class="chatbot-container">
+    <div id="chat-log"></div>
+    <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Écris un message..." required />
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+
+<script src="chatbot.js"></script>
+
     </div>
 </body>
 </html>

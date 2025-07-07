@@ -2,7 +2,7 @@ body {
     background-color: #dcdbdb;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px 20px 20px 200px; /* Ajoute du padding à gauche */
+    padding: 20px;
 }
 .titre {
     border-radius: 30px;
@@ -17,13 +17,13 @@ body {
     text-align: center;
 }
 .bannière-latérale {
-    width: 180px;
+    width: 85px;
     height: 100vh;
     background: #191d31;
     padding: 20px 10px;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0; /* Met la bannière à gauche */
     display: flex;
     flex-direction: column; /* Vertical */
     align-items: center;
@@ -37,5 +37,61 @@ body {
     padding: 10px 20px;
     margin: 10px 0;
     font-size: 0.8em;
+    cursor: pointer;
+}
+.contenu-principal {
+    margin-right: 110px; /* largeur de la bannière + un peu d'espace */
+    padding: 20px;
+}
+.bannière-latérale .icon-link {
+    color: white;
+    margin: 20px 0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.bannière-latérale .icon-link:hover {
+    color: #173dfc;
+}
+.chatbot-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+#chat-log {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+#chat-log p {
+    margin: 8px 0;
+}
+
+#chat-form {
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#chat-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #173dfc;
+    color: white;
     cursor: pointer;
 }
