@@ -1,0 +1,41 @@
+body {
+    background-color: #dcdbdb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px 20px 20px 200px; /* Ajoute du padding à gauche */
+}
+.titre {
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px auto;
+    font-weight: bold;
+}
+.description {
+    font-size: 1.2em;
+    margin: 20px auto;
+    text-align: center;
+}
+.bannière-latérale {
+    width: 180px;
+    height: 100vh;
+    background: #191d31;
+    padding: 20px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column; /* Vertical */
+    align-items: center;
+    z-index: 1000;
+}
+.bannière-latérale button {
+    background: #173dfc;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 0.8em;
+    cursor: pointer;
+}
