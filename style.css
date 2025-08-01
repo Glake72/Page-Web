@@ -52,3 +52,22 @@ body {
 .bannière-latérale .icon-link:hover {
     color: #173dfc;
 }
+.arrière-plan {
+    background: url('https://cdn.discordapp.com/attachments/123456789012345678/123456789012345678/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+.texte {
+    font-size: 1.2em;
+    margin: 20px auto;
+    text-align: center;
+    color: #333;
+}
+.zone-Paris {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 100px 200px 2000px 200px;
+    margin: 20px auto;
+    max-width: 800px;
+}
